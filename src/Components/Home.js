@@ -36,7 +36,7 @@ const Home = () => {
     return (
         <div>
             <h1>Stopwatch</h1>
-            <p>Time: {minutes < 10 ? "0"+minutes : minutes}:{seconds < 10 ? "0"+seconds : seconds}</p>
+            <p>Time: {minutes}:{seconds < 10 ? "0"+seconds : seconds}</p>
             {isRunning ? (
                 <>
                 <button onClick={() => setIsRunning(false)}>Stop</button>
