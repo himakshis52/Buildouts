@@ -27,9 +27,11 @@ const Home = () => {
     }, [isRunning])
 
     const reset = () => {
+
+        setIsRunning(false);
         setSeconds(0);
         setMinutes(0);
-        setIsRunning(false);
+        
     }
 
 
